@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class Activity 3</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+
+
+  <style>
+        
+
+.correct{
+    background-color: rgb(167, 225, 243);
+    border-radius: 50%;
+    width:auto;
+    height: auto;
+   font-weight: bold;
+   
+}
+input{
+
+     height:50px;
+ 
+}
+
+  </style>
+
+
+
+</head>
+
+
+<body>
+  <audio id="cheers" >
+    <source src="cheers.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="points" src="Points.mp3"></audio>
+  <audio id="fail" src="fail.mp3"></audio>
+  <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+    <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+    <span> <img src="header.png" width="30%" height="100px" class="img-responsive"></span>
+</div>
+<br>
+<br>
+  <center>
+    
+  <h1 id="heading" style="font-family: Courier Sans; font-weight:bold"><u>Lets Revise With The Teacher</u></h1>
+  <div class="maindiv container" style="padding-top: 50px;">
+
+
+   <p style="font-size:40px;">Q. Use suitable relative pronouns to link the following sentence: <br>
+   <b style="color:rgb(5, 5, 97)"><i> “Sophie borrowed the white bag. Sophie did not return it.” </i></b>
+    <br> <br>
+    <label id="label1"></label> 
+       <button onclick="func1()" id="btn1" class="correct">Check</button> <br><br>
+
+
+  </p>
+  
+</div>
+  <script>
+    
+           function func1(){
+            document.getElementById('label1').innerHTML='<span style="color: blue;font-weight: bold;">“Sophie did not return the white bag that she borrowed.”</span>'
+            document.getElementById('btn1').style.display="none"
+           }
+
+  </script>
+</center>
+</body>
+</html>
+  
